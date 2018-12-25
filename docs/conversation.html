@@ -114,92 +114,110 @@
     <div class="views">
 
       <div class="view view-main">
+	  
+<div class="pages">
+  <div data-page="conversation" class="page page--conversation">
+    <div class="page-content">
+    
+		<div class="navbar navbar--fixed navbar--fixed-top navbar--bg">
 
-
-
-        <div class="pages">
-
-          <div data-page="index" class="page homepage">
-            <div class="page-content">
-			
-		<div class="navbar navbar--fixed navbar--fixed-top">
-			<div class="navbar__col navbar__col--title">
-				<a href="index.html">mobili</a>
+			<div class="navbar__col navbar__col--icon navbar__col--icon-left">
+				<a href="chat.html"><img src="images/icons/blue/back.png" alt="" title="" /></a>
+			</div>
+			<div class="navbar__col navbar__col--title navbar__col--title-sm navbar__col--title-centered">
+				<a href="chat.html">Alexandra Doe</a>
+				<span class="navbar__col-subtitle">Last online: 10 min ago</span>
 			</div>
 			<div class="navbar__col navbar__col--icon navbar__col--icon-right">
-				<a href="#" data-panel="left" class="open-panel"><img src="images/icons/white/menu.png" alt="" title="" /></a>
-			</div>			
-                </div>
-
-                  <!-- Slider -->
-                 <div class="swiper-container slidertoolbar">
-                    <div class="swiper-wrapper">
-                    
-                      <div class="swiper-slide" style="background-image:url(images/slide1.jpg);">
-		   
-			 <div class="slider-caption">
-			        
-				  <h2 data-swiper-parallax="-100%">Mobile UI KIT</h2>
-				  <p data-swiper-parallax="-30%">Design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
-				  <a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">READ MORE</a>
-			 </div>
-		      </div> 
-                      
-                      <div class="swiper-slide" style="background-image:url(images/slide2.jpg);">
-				  
-				<div class="slider-caption">
-				
-				<h2 data-swiper-parallax="-100%" class="title--white">Multipurpose</h2>
-				<p data-swiper-parallax="-30%" class="text--white">You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
-				<a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">READ MORE</a>
-				</div>	
-		
-                      </div>
-                      <div class="swiper-slide" style="background-image:url(images/slide3.jpg);">
-		  
-				<div class="slider-caption">
-				
-				<h2 data-swiper-parallax="-100%" class="title--white">Web &amp; Native</h2>
-				<p data-swiper-parallax="-30%" class="text--white">You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
-				<a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">READ MORE</a>
-				</div>
-                  
-		   </div> 		   
-                    </div>
-                    <div class="swiper-pagination"></div>
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>	
-                  </div>
-			  
-		 <div class="swiper-container-toolbar swiper-toolbar">
-			<div class="swiper-pagination-toolbar"></div>
-			<div class="swiper-wrapper">
-			  <div class="swiper-slide toolbar-icon">
-				<a href="#" data-panel="right" class="open-panel"><img src="images/icons/blue/user.png" alt="" title="" /></a>
-				<a href="shop.html"><img src="images/icons/blue/shop.png" alt="" title="" /></a>
-			       <a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/blue/twitter.png" alt="" title="" /></a>
-				<a href="photos.html"><img src="images/icons/blue/photos.png" alt="" title="" /></a>
-				<a href="contact.html"><img src="images/icons/blue/contact.png" alt="" title="" /></a>
-			  </div> 
-			  <div class="swiper-slide toolbar-icon">
-				   <a href="features.html"><img src="images/icons/blue/features.png" alt="" title="" /></a>
-				  <a href="music.html"><img src="images/icons/blue/music.png" alt="" title="" /></a>
-				  <a href="#" data-popup=".popup-login" class="open-popup"><img src="images/icons/blue/lock.png" alt="" title="" /></a>
-				  <a href="videos.html"><img src="images/icons/blue/video.png" alt="" title="" /></a>
-				  <a href="tel:12345678" ><img src="images/icons/blue/phone.png" alt="" title="" /></a>
-			   </div>
-
+				<a href="tel:12345678" ><img src="images/icons/blue/phone.png" alt="" title="" /></a>
 			</div>
-		  </div>	
+                </div>
+						
+     <div id="pages_maincontent" class="pages_maincontent--conversation">
 
 			  
-            </div>
-          </div>
-        </div>
+	<div class="page_single layout_fullwidth_padding">	
+	  
+   
+      <ul class="conversation">
 
+          <li class="conversation__row conversation__row--received conversation__row--undread">
+			  <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
+			  
+			  <div class="conversation__content">
+			        <p>Hi there, just wanted to let you know about our vacation</p>
+				<span class="conversation__time">10:21 am</span>
+			  </div>
+			  
+          </li>
+          <li class="conversation__row conversation__row--sent">
+			  <div class="conversation__content">
+			        <p>Hi Alexandra!</p>
+			       <span class="conversation__time">8:32 am</span>
+			  </div>
+			  <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
+          </li>  
+          <li class="conversation__row conversation__row--sent">
+			  <div class="conversation__content">
+			        <p>Let's travel to Paris this summer</p>
+			       <span class="conversation__time">8:20 am</span>
+			  </div>
+			  <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
+          </li>  	  
+          <li class="conversation__row conversation__row--received">
+			  <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
+			  
+			  <div class="conversation__content">
+			        <p>Sure let's make a plan</p>
+				<span class="conversation__time">7:21 am</span>
+			  </div>
+			  
+          </li>
+          <li class="conversation__row conversation__row--received">
+			  <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
+			  
+			  <div class="conversation__content">
+			        <p>I was offline for a period</p>
+				<span class="conversation__time">7:20 am</span>
+			  </div>
+			  
+          </li>
+          <li class="conversation__row conversation__row--sent">
+			  <div class="conversation__content">
+			        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+			       <span class="conversation__time">7:00 am</span>
+			  </div>
+			  <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
+          </li> 
+          <li class="conversation__row conversation__row--received">
+			  <div class="conversation__avatar"><span class="conversation__active-user"></span><img src="images/avatar.jpg" alt="" title="" /></div>
+			  
+			  <div class="conversation__content">
+			        <p>Checkout this ofer <a href="chat.html">Best travel guide to Paris</a></p>
+				<span class="conversation__time">7:21 am</span>
+			  </div>
+			  
+          </li>  
+      </ul>
+       <div class="conversation-submit">
+	   <form class="conversation-submit__form" action="">
+	   <textarea type="textarea" class="conversation-submit__textarea" id="" name="" placeholder="Type your message..."></textarea>
+	   <a href="#" class="conversation-submit__send"><img src="images/icons/blue/send.png" alt="" title="" /></a>
+	   </form>
+       </div>      
+    
 
-
+			  
+			  
+         </div>
+      
       </div>
+      
+      
+    </div>
+  </div>
+</div>
+         </div>
     </div>
 
     <!-- Login Popup -->

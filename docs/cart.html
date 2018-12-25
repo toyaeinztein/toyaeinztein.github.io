@@ -114,92 +114,102 @@
     <div class="views">
 
       <div class="view view-main">
-
-
-
-        <div class="pages">
-
-          <div data-page="index" class="page homepage">
-            <div class="page-content">
-			
-		<div class="navbar navbar--fixed navbar--fixed-top">
+<div class="pages">
+  <div data-page="cart" class="page">
+    <div class="page-content">
+    
+		<div class="navbar navbar--fixed navbar--fixed-top navbar--bg">
 			<div class="navbar__col navbar__col--title">
 				<a href="index.html">mobili</a>
 			</div>
 			<div class="navbar__col navbar__col--icon navbar__col--icon-right">
-				<a href="#" data-panel="left" class="open-panel"><img src="images/icons/white/menu.png" alt="" title="" /></a>
-			</div>			
-                </div>
-
-                  <!-- Slider -->
-                 <div class="swiper-container slidertoolbar">
-                    <div class="swiper-wrapper">
-                    
-                      <div class="swiper-slide" style="background-image:url(images/slide1.jpg);">
-		   
-			 <div class="slider-caption">
-			        
-				  <h2 data-swiper-parallax="-100%">Mobile UI KIT</h2>
-				  <p data-swiper-parallax="-30%">Design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
-				  <a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">READ MORE</a>
-			 </div>
-		      </div> 
-                      
-                      <div class="swiper-slide" style="background-image:url(images/slide2.jpg);">
-				  
-				<div class="slider-caption">
-				
-				<h2 data-swiper-parallax="-100%" class="title--white">Multipurpose</h2>
-				<p data-swiper-parallax="-30%" class="text--white">You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
-				<a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">READ MORE</a>
-				</div>	
-		
-                      </div>
-                      <div class="swiper-slide" style="background-image:url(images/slide3.jpg);">
-		  
-				<div class="slider-caption">
-				
-				<h2 data-swiper-parallax="-100%" class="title--white">Web &amp; Native</h2>
-				<p data-swiper-parallax="-30%" class="text--white">You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
-				<a href="about.html" class="slider-caption__more" data-swiper-parallax="-60%">READ MORE</a>
-				</div>
-                  
-		   </div> 		   
-                    </div>
-                    <div class="swiper-pagination"></div>
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>	
-                  </div>
-			  
-		 <div class="swiper-container-toolbar swiper-toolbar">
-			<div class="swiper-pagination-toolbar"></div>
-			<div class="swiper-wrapper">
-			  <div class="swiper-slide toolbar-icon">
-				<a href="#" data-panel="right" class="open-panel"><img src="images/icons/blue/user.png" alt="" title="" /></a>
-				<a href="shop.html"><img src="images/icons/blue/shop.png" alt="" title="" /></a>
-			       <a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/blue/twitter.png" alt="" title="" /></a>
-				<a href="photos.html"><img src="images/icons/blue/photos.png" alt="" title="" /></a>
-				<a href="contact.html"><img src="images/icons/blue/contact.png" alt="" title="" /></a>
-			  </div> 
-			  <div class="swiper-slide toolbar-icon">
-				   <a href="features.html"><img src="images/icons/blue/features.png" alt="" title="" /></a>
-				  <a href="music.html"><img src="images/icons/blue/music.png" alt="" title="" /></a>
-				  <a href="#" data-popup=".popup-login" class="open-popup"><img src="images/icons/blue/lock.png" alt="" title="" /></a>
-				  <a href="videos.html"><img src="images/icons/blue/video.png" alt="" title="" /></a>
-				  <a href="tel:12345678" ><img src="images/icons/blue/phone.png" alt="" title="" /></a>
-			   </div>
-
+				<a href="cart.html"><img src="images/icons/white/cart.png" alt="" title="" /><span class="navbar__icon-bullet">3</span></a>
 			</div>
-		  </div>	
-
+			<div class="navbar__col navbar__col--icon navbar__col--icon-right">
+				<a href="#" data-panel="right" class="open-panel"><img src="images/icons/white/user.png" alt="" title="" /></a>
+			</div>
+			<div class="navbar__col navbar__col--icon navbar__col--icon-right">
+				<a href="#" data-panel="left" class="open-panel"><img src="images/icons/white/menu.png" alt="" title="" /></a>
+			</div>
+                </div>
+						
+     <div id="pages_maincontent">
+      
+          <h2 class="page_title">SHOPPING CART <span>(3 ITEMS)</span></h2>
+			  	  
 			  
-            </div>
-          </div>
-        </div>
-
-
-
+	<div class="page_single layout_fullwidth_padding">	
+	  
+         <div class="cartcontainer">            
+            <div class="cart_item" id="cartitem1">
+                <div class="item_title"><span>01.</span> Bicycle Pedal Driven</div>
+                <div class="item_price">$100</div>
+            	<div class="item_thumb"><a href="shop-item.html" class="close-panel"><img src="images/photos/photo1.jpg" alt="" title="" /></a></div>
+                <div class="item_qnty">
+                    <form id="myform" method="POST" action="#">
+                        <label>QUANTITY</label>
+                        <input type="button" value="-" class="qntyminus" field="quantity" />
+                        <input type="text" name="quantity" value="1" class="qnty" />
+                        <input type="button" value="+" class="qntyplus" field="quantity" />
+                    </form>
+                </div>
+                <a href="#" class="item_delete" id="cartitem1"><img src="images/icons/black/trash.png" alt="" title="" /></a>           </div>
+            
+            <div class="cart_item" id="cartitem2">
+                <div class="item_title"><span>02.</span> Yellow Car </div>
+                <div class="item_price">$1200</div>
+            	<div class="item_thumb"><a href="shop-item.html" class="close-panel"><img src="images/photos/photo2.jpg" alt="" title="" /></a></div>
+                <div class="item_qnty">
+                    <form id="myform" method="POST" action="#">
+                        <label>QUANTITY</label>
+                        <input type="button" value="-" class="qntyminus" field="quantity2" />
+                        <input type="text" name="quantity2" value="1" class="qnty" />
+                        <input type="button" value="+" class="qntyplus" field="quantity2" />
+                    </form>
+                </div>
+                <a href="#" class="item_delete" id="cartitem2"><img src="images/icons/black/trash.png" alt="" title="" /></a>            </div>
+            
+            <div class="cart_item" id="cartitem3">
+                <div class="item_title"><span>03.</span> Summer T-Shirt</div>
+                <div class="item_price">$20</div>
+            	<div class="item_thumb"><a href="shop-item.html" class="close-panel"><img src="images/photos/photo3.jpg" alt="" title="" /></a></div>
+                <div class="item_qnty">
+                    <form id="myform" method="POST" action="#">
+                        <label>QUANTITY</label>
+                        <input type="button" value="-" class="qntyminus" field="quantity3" />
+                        <input type="text" name="quantity3" value="1" class="qnty" />
+                        <input type="button" value="+" class="qntyplus" field="quantity3" />
+                    </form>
+                </div>
+                <a href="#" class="item_delete" id="cartitem3"><img src="images/icons/black/trash.png" alt="" title="" /></a>             </div>
+            
+              <div class="carttotal">
+                  <div class="carttotal_row">
+                  <div class="carttotal_left">CART TOTAL</div>  <div class="carttotal_right">$ 1,320.00</div>
+                  </div>
+                  <div class="carttotal_row">
+                  <div class="carttotal_left">VAT (15%)</div>  <div class="carttotal_right">$ 198.00</div>
+                  </div>
+                  <div class="carttotal_row_last">
+                  <div class="carttotal_left">TOTAL</div> <div class="carttotal_right">$ 1,518.00</div>
+                  </div>
+              </div>
+            
+              <a href="checkout.html" class="btn btn--full">PROCEED TO CHECKOUT</a>           
+			  
+ </div>
+			  
+			  
+         </div>
+      
       </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+         </div>
     </div>
 
     <!-- Login Popup -->
